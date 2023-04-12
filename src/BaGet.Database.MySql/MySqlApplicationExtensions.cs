@@ -15,7 +15,7 @@ namespace BaGet
             {
                 var databaseOptions = provider.GetRequiredService<IOptionsSnapshot<DatabaseOptions>>();
 
-                options.UseMySql(databaseOptions.Value.ConnectionString);
+                options.UseMySql(databaseOptions.Value.ConnectionString, Microsoft.EntityFrameworkCore.ServerVersion.AutoDetect(databaseOptions.Value.ConnectionString));
             });
 
             return app;

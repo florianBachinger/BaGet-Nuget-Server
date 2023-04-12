@@ -65,7 +65,6 @@ namespace BaGet
 
             // Add storage providers.
             app.AddFileStorage();
-            app.AddAliyunOssStorage();
             app.AddAwsS3Storage();
             app.AddAzureBlobStorage();
             app.AddGoogleCloudStorage();

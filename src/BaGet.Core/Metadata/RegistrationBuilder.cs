@@ -50,7 +50,7 @@ namespace BaGet.Core
             {
                 Type = RegistrationLeafResponse.DefaultType,
                 Listed = package.Listed,
-                Published = package.Published,
+                Published = DateTime.SpecifyKind(package.Published, DateTimeKind.Utc),
                 RegistrationLeafUrl = _url.GetRegistrationLeafUrl(id, version),
                 PackageContentUrl = _url.GetPackageDownloadUrl(id, version),
                 RegistrationIndexUrl = _url.GetRegistrationIndexUrl(id)
@@ -83,7 +83,7 @@ namespace BaGet.Core
                     ProjectUrl = package.ProjectUrlString,
                     RepositoryUrl = package.RepositoryUrlString,
                     RepositoryType = package.RepositoryType,
-                    Published = package.Published,
+                    Published = DateTime.SpecifyKind(package.Published, DateTimeKind.Utc),
                     RequireLicenseAcceptance = package.RequireLicenseAcceptance,
                     Summary = package.Summary,
                     Tags = package.Tags,

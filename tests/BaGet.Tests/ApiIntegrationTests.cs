@@ -285,7 +285,7 @@ namespace BaGet.Tests
             ""minClientVersion"": """",
             ""packageContent"": ""http://localhost/v3/package/testdata/1.2.3/testdata.1.2.3.nupkg"",
             ""projectUrl"": """",
-            ""published"": ""2020-01-01T00:00:00Z"",
+            ""published"": ""2020-01-01T01:00:00Z"",
             ""requireLicenseAcceptance"": false,
             ""summary"": """",
             ""tags"": [],
@@ -325,7 +325,7 @@ namespace BaGet.Tests
   ],
   ""listed"": true,
   ""packageContent"": ""http://localhost/v3/package/testdata/1.2.3/testdata.1.2.3.nupkg"",
-  ""published"": ""2020-01-01T00:00:00Z"",
+  ""published"": ""2020-01-01T01:00:00Z"",
   ""registration"": ""http://localhost/v3/registration/testdata/index.json""
 }", json);
         }
